@@ -30,7 +30,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 // @CrossOrigin(originPatterns = {"*"})//permite el acceso a todos los dominios
-@CrossOrigin(origins = {"http://localhost:4200"})//permite el acceso a todos los dominios
+@CrossOrigin(origins = {"http://localhost:4200"}, originPatterns={"*"})//permite el acceso a todos los dominios
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
